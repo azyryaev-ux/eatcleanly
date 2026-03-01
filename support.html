@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Support — Eat Cleanly</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,600;9..40,700&family=Playfair+Display:wght@600;700;800&display=swap" rel="stylesheet">
+  <style>
+    :root { --green: #7AFF2B; --bg: #0A0A0A; --bg-card: #141414; --text: #F5F5F5; --text-muted: #8A8A8A; --text-dim: #555; }
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { font-family: 'DM Sans', sans-serif; background: var(--bg); color: var(--text); -webkit-font-smoothing: antialiased; }
+    nav { position: fixed; top: 0; width: 100%; z-index: 100; padding: 20px 40px; display: flex; justify-content: space-between; align-items: center; background: rgba(10,10,10,0.85); backdrop-filter: blur(20px); border-bottom: 1px solid rgba(255,255,255,0.04); }
+    .logo { font-family: 'Playfair Display', serif; font-weight: 800; font-size: 1.4rem; color: var(--text); text-decoration: none; letter-spacing: -0.5px; }
+    .logo span { color: var(--green); }
+    .nav-links { display: flex; gap: 32px; list-style: none; }
+    .nav-links a { color: var(--text-muted); text-decoration: none; font-size: 0.9rem; font-weight: 500; transition: color 0.25s; }
+    .nav-links a:hover { color: var(--green); }
+    .nav-links a.active { color: var(--green); }
+
+    .page { max-width: 720px; margin: 0 auto; padding: 140px 24px 80px; }
+    .page h1 { font-family: 'Playfair Display', serif; font-size: 2.6rem; font-weight: 700; margin-bottom: 12px; letter-spacing: -1px; }
+    .page .subtitle { color: var(--text-muted); font-size: 1.05rem; margin-bottom: 48px; line-height: 1.6; }
+
+    .section { margin-bottom: 48px; }
+    .section h2 { font-size: 1.2rem; font-weight: 700; margin-bottom: 12px; color: var(--green); }
+    .section p, .section li { color: var(--text-muted); font-size: 0.95rem; line-height: 1.7; }
+    .section p { margin-bottom: 12px; }
+    .section ul { list-style: none; padding: 0; }
+    .section li { padding: 8px 0; padding-left: 20px; position: relative; }
+    .section li::before { content: '→'; position: absolute; left: 0; color: var(--green); font-weight: 600; }
+
+    .contact-card { background: var(--bg-card); border: 1px solid rgba(255,255,255,0.06); border-radius: 16px; padding: 32px; margin-top: 24px; }
+    .contact-card a { color: var(--green); text-decoration: none; font-weight: 600; }
+    .contact-card a:hover { text-decoration: underline; }
+
+    .faq-item { background: var(--bg-card); border: 1px solid rgba(255,255,255,0.05); border-radius: 12px; padding: 24px; margin-bottom: 12px; }
+    .faq-item h3 { font-size: 1rem; font-weight: 600; margin-bottom: 8px; }
+    .faq-item p { color: var(--text-muted); font-size: 0.9rem; line-height: 1.65; margin: 0; }
+
+    footer { border-top: 1px solid rgba(255,255,255,0.05); padding: 48px 40px; display: flex; flex-wrap: wrap; justify-content: space-between; align-items: center; gap: 20px; max-width: 720px; margin: 0 auto; }
+    .footer-left { font-size: 0.85rem; color: var(--text-dim); }
+    .footer-links { display: flex; gap: 28px; list-style: none; }
+    .footer-links a { color: var(--text-muted); text-decoration: none; font-size: 0.85rem; transition: color 0.25s; }
+    .footer-links a:hover { color: var(--green); }
+
+    @media (max-width: 640px) {
+      nav { padding: 16px 20px; }
+      .nav-links { gap: 16px; }
+      .page { padding: 120px 20px 60px; }
+      footer { flex-direction: column; text-align: center; padding: 36px 20px; }
+    }
+  </style>
+</head>
+<body>
+
+  <nav>
+    <a href="index.html" class="logo">eat<span>cleanly</span></a>
+    <ul class="nav-links">
+      <li><a href="support.html" class="active">Support</a></li>
+      <li><a href="privacy.html">Privacy</a></li>
+      <li><a href="terms.html">Terms</a></li>
+    </ul>
+  </nav>
+
+  <div class="page">
+    <h1>Support</h1>
+    <p class="subtitle">We're here to help you get the most out of Eat Cleanly. Find answers to common questions below or reach out to us directly.</p>
+
+    <div class="section">
+      <h2>Contact Us</h2>
+      <div class="contact-card">
+        <p>Have a question, found a bug, or want to share feedback? We'd love to hear from you.</p>
+        <p>Email us at <a href="mailto:support@eatcleanly.app">support@eatcleanly.app</a></p>
+        <p>We typically respond within 24 hours.</p>
+      </div>
+    </div>
+
+    <div class="section">
+      <h2>Frequently Asked Questions</h2>
+
+      <div class="faq-item">
+        <h3>Is Eat Cleanly free to use?</h3>
+        <p>Yes! You can browse all recipes, view macro breakdowns, and explore the app for free. Premium features like weekly meal planning, unlimited saves, and advanced filters are available with a subscription.</p>
+      </div>
+
+      <div class="faq-item">
+        <h3>How do I cancel my subscription?</h3>
+        <p>Subscriptions are managed through your Apple ID. Go to Settings → your name → Subscriptions on your iPhone, find Eat Cleanly, and tap Cancel Subscription.</p>
+      </div>
+
+      <div class="faq-item">
+        <h3>How do I restore my purchases?</h3>
+        <p>Open the app, go to Settings → Subscription → Restore Purchases. Make sure you're signed into the same Apple ID you used to subscribe.</p>
+      </div>
+
+      <div class="faq-item">
+        <h3>Can I request new recipes?</h3>
+        <p>Absolutely! We're always adding new content. Send your recipe requests or dietary needs to support@eatcleanly.app and we'll do our best to include them.</p>
+      </div>
+
+      <div class="faq-item">
+        <h3>Do you support dietary restrictions?</h3>
+        <p>Yes. You can set allergen filters (gluten, dairy, nuts, soy, etc.) and dietary preferences in Settings → Content to personalize your recipe feed.</p>
+      </div>
+
+      <div class="faq-item">
+        <h3>How do I delete my account?</h3>
+        <p>Go to Settings → Account → Delete Account within the app. This will permanently remove your account and all associated data. Please note this action cannot be undone.</p>
+      </div>
+    </div>
+
+    <div class="section">
+      <h2>Troubleshooting</h2>
+      <ul>
+        <li>Make sure you're running the latest version of the app</li>
+        <li>Try closing and reopening the app</li>
+        <li>Check your internet connection for recipe loading issues</li>
+        <li>Restart your device if the app becomes unresponsive</li>
+        <li>If issues persist, email us with your device model and iOS version</li>
+      </ul>
+    </div>
+  </div>
+
+  <footer>
+    <div class="footer-left">© 2026 Eat Cleanly. All rights reserved.</div>
+    <ul class="footer-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="privacy.html">Privacy</a></li>
+      <li><a href="terms.html">Terms</a></li>
+    </ul>
+  </footer>
+
+</body>
+</html>
